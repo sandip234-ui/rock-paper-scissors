@@ -1,0 +1,7 @@
+# Ignore node modules and build artifacts
+node_modules/
+dist/output.css
+
+# Optional: OS or IDE files
+.DS_Store
+.vscode/
