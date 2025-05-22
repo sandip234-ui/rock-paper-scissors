@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CLI</title>
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-100">
+  <div>
+    <h1 class="text-4xl font-bold bg-[#1b263b] text-[#f1faee] h-[5rem] text-center leading-[5rem] w-full">Rock Paper Scissors</h1>
+    
+    <!-- 3 Choices -->
+    <div class="flex items-center mt-[5rem] choices justify-center md:gap-x-[5rem]">
+      <div class="choice h-[165px] w-[165px] rounded-full hover:border-2 hover:border-[#1b263b] flex justify-center items-center" id="rock">
+        <img src="./src/Images/rock.png" alt="rock" class="h-[150px] w-[150px] object-cover rounded-full hover:cursor-pointer hover:border-3 hover:border-black"/>
+      </div>
+      <div class="choice h-[165px] w-[165px] rounded-full hover:border-2 hover:border-[#1b263b] flex justify-center items-center" id="paper" >
+        <img src="./src/Images/paper.png" alt="paper" class="h-[150px] w-[150px] object-cover rounded-full hover:cursor-pointer hover:border-3 hover:border-black"/>
+      </div>
+      <div class="choice h-[165px] w-[165px] rounded-full hover:border-2 hover:border-[#1b263b] flex justify-center items-center" id="scissors">
+        <img src="./src/Images/scissors.png" alt="scissors" class="h-[150px] w-[150px] object-cover rounded-full  hover:cursor-pointer hover:border-3 hover:border-black"/>
+      </div>     
+    </div>
+    
+    <!-- Score Board -->
+    <div class="flex items-center justify-center score-board gap-x-[9rem] mt-[5rem] text-[2rem] font-bold">
+      <div class="flex flex-col items-center justify-center score">
+        <p id="player-score" class="text-[3rem]">0</p>
+        <p>You</p>
+      </div>
+      <div class="flex flex-col items-center justify-center score">
+        <p id="computer-score" class="text-[3rem]">0</p>
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div class="text-center msg-container mt-[4rem]">
+      <p id="msg" class="text-[2rem] font-bold text-white p-[1rem] bg-[#1b263b] inline rounded-xl">Play your move</p>
+    </div>
+  </div>
+
+  <!-- Reset Game Button -->
+   <div class="flex items-center justify-center mt-[5rem]">
+     <button id="reset-btn" class="text-xl font-bold mt-8 px-4 py-4 rounded-md shadow-2xl bg-[#ff4d6d] hover:bg-[#800f2f] transition-colors duration-300 ease-in-out border-none text-white">Reset Game</button>
+   </div>
+  
+  <!-- Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
