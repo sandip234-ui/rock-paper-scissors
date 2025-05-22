@@ -32,12 +32,13 @@ It allows a player to play against the computer with dynamic score updates and r
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/sandip234-ui/rock-paper-scissors.git
-   cd <repo-name>
+   cd <rock-paper-scissors>
 
-	2.	Install Tailwind CSS
+
+  2.  Install Tailwind CSS
 If not already installed:
 
-npm install -D tailwindcss
+npm install -D tailwindcs s
 npx tailwindcss init
 
 
