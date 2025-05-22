@@ -17,11 +17,11 @@ It allows a player to play against the computer with dynamic score updates and r
 ## 📁 Project Structure
 
 ├── index.html          # Main HTML file
-├── script.js           # Game logic
-├── input.css           # Tailwind input file
+├── script.js           # Game logic         
 ├── tailwind.config.js  # Tailwind configuration
 ├── src/
 │   └── Images/         # Game images (rock, paper, scissors)
+    └── input.css       # Tailwind input file
 ├── package.json        # Dependencies (if using Tailwind CLI)
 └── .gitignore          # Ignored files
 ```
